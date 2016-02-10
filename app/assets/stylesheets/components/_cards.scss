@@ -1,0 +1,51 @@
+.card_white{
+  background-color: white;
+  padding: 20px 0;
+  margin: 20px 0;
+  position: relative;
+  border: 1px solid $gray-light;
+  background-size: cover;
+  background-position: center;
+}
+.card_resto{
+  position: relative;
+  min-height: 100px;
+}
+.resto_name{
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.resto_address{
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+.resto_phone_number{
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+.resto_category{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.min_200{
+  min-height: 100px;
+}
+.card_resto > .resto_category{
+  position: absolute;
+  bottom: 40px;
+  right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}

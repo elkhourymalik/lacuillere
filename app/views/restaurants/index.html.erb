@@ -1,0 +1,19 @@
+<div class="bg-lighter-grey padded">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="box">
+          <% @restaurants.each do |restaurant| %>
+            <div class="card_white min_200" style="background-image: url(<%= restaurant.image_background %>)">
+              <%= link_to(restaurant_path(restaurant)) do %>
+                <h2 class="resto_name"><%= restaurant.name %></h2>
+              <% end %>
+              <p class="resto_category"><%= restaurant.category %></p>
+              <p class="resto_address"><%= restaurant.address %></p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

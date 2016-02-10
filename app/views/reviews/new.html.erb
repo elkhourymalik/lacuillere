@@ -1,0 +1,16 @@
+<div class="bg-lighter-grey padded">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <h2><%= @restaurant.name %></h2>
+        <div class="box">
+          <%= simple_form_for [@restaurant, @review] do |f| %>
+              <%= f.input :content, label: false, placeholder: "Review" %>
+              <%= f.input :rating, label: false, collection: Review::RATINGS, prompt: "Select note" %>
+            <%= f.button :submit, class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

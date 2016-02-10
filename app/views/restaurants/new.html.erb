@@ -1,0 +1,18 @@
+<div class="bg-lighter-grey padded">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        <div class="box">
+          <%= simple_form_for @restaurant do |f| %>
+              <%= f.input :name, label: false, placeholder: "Name" %>
+              <%= f.input :address, label: false, placeholder: "Address" %>
+              <%= f.input :phone_number, label: false, placeholder: "Phone Number" %>
+              <%= f.input :url, label: false, placeholder: "Website" %>
+              <%= f.input :category, label: false, collection: Restaurant::CATEGORIES, prompt: "Select category" %>
+            <%= f.button :submit, class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
